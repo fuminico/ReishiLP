@@ -14,6 +14,39 @@ function openTab(evt, tabName) {
     evt.currentTarget.classList.add("active");
 }
 
+// Countdown Timer Function
+function startCountdown() {
+    const countdownElement = document.getElementById('countdown-timer');
+    if (!countdownElement) return;
+
+    // Set the end date: 2 days from now
+    const endDate = new Date().getTime() + (2 * 24 * 60 * 60 * 1000);
+
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the respective elements
+        document.getElementById("days").innerText = String(days).padStart(2, '0');
+        document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+        document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+        // If the countdown is over, write some text
+        if (distance < 0) {
+            clearInterval(timer);
+            countdownElement.innerHTML = "<p>この特別キャンペーンは終了しました</p>";
+        }
+    }, 1000);
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Set the first tab to be active by default
     if(document.querySelector('.tab-link')) {
@@ -83,5 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check
+    revealOnScroll();
+
+    // Start the countdown timer
+    startCountdown();
 });

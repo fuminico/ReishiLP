@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>霊視占い師育成講座</title>
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 <body>
-    <!-- ============================================ -->
-    <!--                 Sticky Header                  -->
-    <!-- ============================================ -->
     <header id="header">
         <div class="container">
             <div class="header-content">
@@ -20,29 +17,17 @@
     </header>
 
     <main>
-        <!-- ============================================ -->
-        <!--                   Hero                       -->
-        <!-- ============================================ -->
         <section id="hero">
-            <div id="hero-video-container">
-                <!-- Video will be controlled by CSS background -->
-            </div>
+            <div id="hero-video-container"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 class="main-catchphrase">あなたの「感じる力」は、<br>誰かの「光」になる。</h1>
                 <p class="sub-catchphrase">秘めたる霊能力を解放し、人々を導く本物の占い師へ。</p>
                 <a href="#contact" class="cta-button">まずは無料個別相談会へ</a>
                 <p class="microcopy">※無理な勧誘は一切ありません</p>
-                <div class="authority-badges">
-                    <span class="badge">顧客満足度98%</span>
-                    <span class="badge">卒業生300名以上</span>
-                </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                  Empathy                     -->
-        <!-- ============================================ -->
         <section id="empathy" class="section reveal">
             <div class="container">
                 <h2 class="section-title">こんなお悩み、ありませんか？</h2>
@@ -57,9 +42,6 @@
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                   Future                     -->
-        <!-- ============================================ -->
         <section id="future" class="section reveal">
             <div class="container">
                 <h2 class="section-title">本講座で、あなたも理想の未来へ</h2>
@@ -83,47 +65,29 @@
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                  Features                    -->
-        <!-- ============================================ -->
         <section id="features" class="section reveal">
             <div class="container">
                 <h2 class="section-title">私たちの講座が選ばれる3つの理由</h2>
-                <div class="features-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffffff'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='30' fill='%23c5a059' text-anchor='middle' dominant-baseline='middle'%3E1:1%3C/text%3E%3C/svg%3E" alt="マンツーマン指導">
-                        </div>
-                        <div class="feature-text">
-                            <h3>マンツーマン指導</h3>
-                            <p>経験豊富な講師が、あなたのレベルや特性に合わせて、潜在能力を最大限に引き出すための最適な指導をマンツーマンで行います。</p>
-                        </div>
+                <div class="features-list-v2">
+                    <div class="feature-item-v2">
+                        <div class="feature-icon-v2" id="icon-individual"></div>
+                        <h3>完全マンツーマン指導</h3>
+                        <p>あなたの魂の特性に合わせ、潜在能力を最大限に引き出すオーダーメイドの指導を行います。</p>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffffff'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='24' fill='%23c5a059' text-anchor='middle' dominant-baseline='middle'%3E実践%3C/text%3E%3C/svg%3E" alt="実践重視のカリキュラム">
-                        </div>
-                        <div class="feature-text">
-                            <h3>実践重視のカリキュラム</h3>
-                            <p>理論だけでなく、卒業後すぐにプロとして活躍できるよう、実際の鑑定を想定した実践的なトレーニングを豊富にご用意しています。</p>
-                        </div>
+                    <div class="feature-item-v2">
+                        <div class="feature-icon-v2" id="icon-practical"></div>
+                        <h3>超実践型カリキュラム</h3>
+                        <p>卒業後すぐにプロとして活躍できるよう、実際の鑑定を想定した実践トレーニングを豊富にご用意。</p>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffffff'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='20' fill='%23c5a059' text-anchor='middle' dominant-baseline='middle'%3Eサポート%3C/text%3E%3C/svg%3E" alt="卒業後も安心のサポート">
-                        </div>
-                        <div class="feature-text">
-                            <h3>卒業後も安心のサポート</h3>
-                            <p>独立開業のノウハウ提供や、同じ志を持つ仲間と繋がれる卒業生限定のコミュニティなど、活動を継続するためのサポート体制も万全です。</p>
-                        </div>
+                    <div class="feature-item-v2">
+                        <div class="feature-icon-v2" id="icon-support"></div>
+                        <h3>生涯にわたるサポート</h3>
+                        <p>同じ志を持つ仲間と繋がるコミュニティや、独立開業ノウハウで、あなたの活動を永続的に支えます。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                Testimonials                  -->
-        <!-- ============================================ -->
         <section id="testimonials" class="section reveal">
             <div class="container">
                 <h2 class="section-title">喜びの声が続々と届いています！</h2>
@@ -139,34 +103,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <img src="data:image/svg+xml,%3Csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%2359a0c5'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='20' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'%3EM.K様%3C/text%3E%3C/svg%3E" alt="お客様の声 2" class="testimonial-img">
-                        <div class="testimonial-content">
-                            <h4>会社員との副業で月収20万円アップ！</h4>
-                            <p>"昔から占いが好きでしたが、仕事にするなんて夢のまた夢だと思っていました。実践的なカリキュラムのおかげで、週末だけの活動でもしっかり収入を得られるように。本業のストレスも減り、毎日が充実しています。"</p>
-                            <div class="testimonial-footer">
-                                <span class="testimonial-name">M.K様 (38歳)</span>
-                                <button class="video-btn" data-video-id="dummy-video-2">インタビュー動画を見る</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Video Modal -->
         <div id="video-modal" class="modal">
             <div class="modal-content">
                 <span class="close-btn">&times;</span>
-                <div id="video-player">
-                    <!-- YouTube iframe will be inserted here -->
-                </div>
+                <div id="video-player"></div>
             </div>
         </div>
 
-        <!-- ============================================ -->
-        <!--                  Graduates                   -->
-        <!-- ============================================ -->
         <section id="graduates" class="section reveal">
             <div class="container">
                 <h2 class="section-title">卒業生は全国で活躍しています</h2>
@@ -193,9 +140,6 @@
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                  Instructor                  -->
-        <!-- ============================================ -->
         <section id="instructor" class="section reveal">
             <div class="container">
                 <h2 class="section-title">講師紹介</h2>
@@ -204,20 +148,20 @@
                         <img src="data:image/svg+xml,%3Csvg width='400' height='500' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23c5a059'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='30' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'%3E講師%3C/text%3E%3C/svg%3E" alt="講師の写真">
                     </div>
                     <div class="instructor-info">
-                        <h3>講師名：天野 光 (あまの ひかり)</h3>
-                        <p class="instructor-title">スピリチュアルカウンセラー</p>
+                        <h3>天野 光 (あまの ひかり)</h3>
+                        <p class="instructor-title">延べ1万人以上を導いたスピリチュアルマスター</p>
                         <p class="instructor-bio">
-                            幼少期より特異な霊能力を持ち、数々の相談者を導いてきた実績を持つ。鑑定歴20年、延べ1万人以上の鑑定実績。メディア出演多数。<br><br>
-                            「かつての私のように、その能力の扱いに悩み、孤独を感じている人を一人でも多く救いたい。」その想いから、自身の知識と経験の全てを伝えるべく、本講座を開講。一人ひとりの魂の輝きを最大限に引き出すことを使命としている。
+                            幼少期より特異な霊能力に目覚め、20年以上にわたりプロとして活動。政財界の著名人やトップアスリートからも絶大な信頼を得る、予約困難な鑑定士。
+                            <br><br>
+                            メディアへの出演依頼も後を絶たないが、「本当に力に悩む人を直接救いたい」という想いから、自身の鑑定経験と、高次元の存在から授かった独自の能力開発メソッドを体系化。本講座の設立を決意する。
+                            <br><br>
+                            「あなたの魂は、あなたが思う以上に輝きたがっています。そのお手伝いをさせてください。」
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                    Course                    -->
-        <!-- ============================================ -->
         <section id="course" class="section reveal">
             <div class="container">
                 <h2 class="section-title">講座内容と料金</h2>
@@ -227,128 +171,107 @@
                         <button class="tab-link" onclick="openTab(event, 'practical')">実践編</button>
                         <button class="tab-link" onclick="openTab(event, 'advanced')">応用編</button>
                     </div>
-
                     <div id="basic" class="tab-content active">
-                        <h3>霊視能力の基盤を築く</h3>
+                        <h3>第1部：霊視能力の覚醒</h3>
+                        <p>あなたの内に眠る「感じる力」を安全に、そして確実に呼び覚ますための第一歩。エネルギーの基本から、高次元の存在との対話法まで、基礎を徹底的に学びます。</p>
                         <ul>
-                            <li><span class="check-icon"></span> 霊視・霊聴・霊感の基本原理</li>
-                            <li><span class="check-icon"></span> 高次元の存在との安全な繋がり方</li>
-                            <li><span class="check-icon"></span> チャネリングとリーディングの違い</li>
-                            <li><span class="check-icon"></span> エネルギーを浄化し、自身を保護する方法</li>
+                            <li><span class="check-icon"></span> 霊的エネルギーの基本構造と浄化法</li>
+                            <li><span class="check-icon"></span> 守護霊・ハイヤーセルフとの対話入門</li>
+                            <li><span class="check-icon"></span> 安全なチャネリングとリーディングの実践</li>
+                            <li><span class="check-icon"></span> 魂の羅針盤「サイキック能力」の解放</li>
                         </ul>
                     </div>
-
                     <div id="practical" class="tab-content">
-                        <h3>プロの技術を習得する</h3>
+                        <h3>第2部：プロの鑑定技術</h3>
+                        <p>基礎編で覚醒させた能力を、他者を癒し導くための「プロの技術」へと昇華させます。多様な相談に対応できる、高度なリーディングテクニックを習得します。</p>
                         <ul>
-                            <li><span class="check-icon"></span> 実際の相談を想定したリーディング実践</li>
-                            <li><span class="check-icon"></span> 守護霊やハイヤーセルフからのメッセージ解読</li>
-                            <li><span class="check-icon"></span> 過去生リーディングのテクニック</li>
-                            <li><span class="check-icon"></span> クライアントとの信頼関係を築くカウンセリング術</li>
+                            <li><span class="check-icon"></span> 過去生・未来を読み解く時空リーディング</li>
+                            <li><span class="check-icon"></span> 人間関係の悩みを解決する相性鑑定法</li>
+                            <li><span class="check-icon"></span> 故人のメッセージを伝えるミディアムシップ</li>
+                            <li><span class="check-icon"></span> クライアントの心を開くカウンセリング術</li>
                         </ul>
                     </div>
-
                     <div id="advanced" class="tab-content">
-                        <h3>ビジネスとして確立する</h3>
+                        <h3>第3部：ビジネスとしての確立</h3>
+                        <p>優れた能力を、人々に届け、そしてあなた自身の豊かさに繋げるための最終段階。プロとして継続的に活動するための、マーケティングと経営戦略を学びます。</p>
                         <ul>
-                            <li><span class="check-icon"></span> プロ占い師としての倫理と心構え</li>
-                            <li><span class="check-icon"></span> あなたの魅力を伝えるプロフィール作成</li>
-                            <li><span class="check-icon"></span> SNSを活用した集客とファン作り</li>
-                            <li><span class="check-icon"></span> 独立開業のための法務・税務知識</li>
+                            <li><span class="check-icon"></span> あなたの魅力を伝えるブランディング戦略</li>
+                            <li><span class="check-icon"></span> SNSを活用したファン作りと集客術</li>
+                            <li><span class="check-icon"></span> 鑑定料金の設定とリピートされる仕組み作り</li>
+                            <li><span class="check-icon"></span> 占い師として活動するための法務・税務知識</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="pricing-container">
-                    <h3>料金プラン</h3>
+                    <div class="limited-offer-banner">
+                        <p>【特別キャンペーン実施中】</p>
+                        <div id="countdown-timer">
+                            <p>キャンペーン終了まで</p>
+                            <div class="timer-box">
+                                <span id="days">00</span>日
+                                <span id="hours">00</span>時間
+                                <span id="minutes">00</span>分
+                                <span id="seconds">00</span>秒
+                            </div>
+                        </div>
+                    </div>
                     <div class="pricing-table">
                         <div class="price-header">
                             <p>プロフェッショナル育成コース</p>
                         </div>
                         <div class="price-body">
-                            <p class="price">300,000円<span>(税込)</span></p>
+                            <p class="price-original">通常価格 350,000円</p>
+                            <p class="price-discount"><span>限定価格</span> 300,000円<span>(税込)</span></p>
                             <ul class="price-features">
-                                <li><span class="check-icon"></span> 全12回のオンライン講座</li>
-                                <li><span class="check-icon"></span> 講師によるマンツーマン指導サポート</li>
-                                <li><span class="check-icon"></span> 講座の全録画データ提供</li>
-                                <li><span class="check-icon"></span> 卒業生限定コミュニティへの参加権</li>
-                                <li><span class="check-icon"></span> プロとして活動するための集客ノウハウ</li>
+                                <li><span class="check-icon"></span> 全18回のオンライン講座（動画・テキスト付）</li>
+                                <li><span class="check-icon"></span> 講師によるマンツーマン指導サポート（期間中無制限）</li>
+                                <li><span class="check-icon"></span> 卒業生限定シークレットコミュニティへの参加権</li>
+                                <li><span class="check-icon"></span> プロとして活動するための集客ノウハウ一式</li>
                             </ul>
-                            <a href="#contact" class="cta-button">このコースで未来を変える</a>
+                            <a href="#contact" class="cta-button">この価格で未来を変える</a>
                         </div>
                     </div>
-                    <p class="special-offer">※ 期間限定！9月30日までのお申し込みで、入学金50,000円が無料！</p>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                     FAQ                      -->
-        <!-- ============================================ -->
         <section id="faq" class="section reveal">
             <div class="container">
                 <h2 class="section-title">よくあるご質問</h2>
                 <div class="accordion">
                     <div class="accordion-item">
                         <button class="accordion-header">全くの未経験でも大丈夫ですか？</button>
-                        <div class="accordion-body">
-                            <p>はい、もちろんです。受講生の9割以上が未経験からスタートされています。霊能力の基礎から丁寧に指導しますので、ご安心ください。</p>
-                        </div>
+                        <div class="accordion-body"><p>はい、もちろんです。受講生の9割以上が未経験からスタートされています。霊能力の基礎から丁寧に指導しますので、ご安心ください。</p></div>
                     </div>
                     <div class="accordion-item">
                         <button class="accordion-header">分割払いは可能ですか？</button>
-                        <div class="accordion-body">
-                            <p>はい、可能です。個別相談会にて、ご希望のお支払いプランについてお気軽にご相談ください。</p>
-                        </div>
+                        <div class="accordion-body"><p>はい、可能です。個別相談会にて、ご希望のお支払いプランについてお気軽にご相談ください。</p></div>
                     </div>
                     <div class="accordion-item">
                         <button class="accordion-header">オンラインでの受講は可能ですか？</button>
-                        <div class="accordion-body">
-                            <p>はい、本講座は全国どこからでもご受講いただける完全オンライン講座となっております。</p>
-                        </div>
+                        <div class="accordion-body"><p>はい、本講座は全国どこからでもご受講いただける完全オンライン講座となっております。</p></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                     Flow                     -->
-        <!-- ============================================ -->
         <section id="flow" class="section reveal">
             <div class="container">
                 <h2 class="section-title">お申し込みの流れ</h2>
                 <div class="flow-steps">
-                    <div class="step">
-                        <div class="step-icon">1</div>
-                        <h3>フォーム入力</h3>
-                        <p>まずは無料相談会の申し込みフォームに必要事項をご入力ください。</p>
-                    </div>
+                    <div class="step"><div class="step-icon">1</div><h3>フォーム入力</h3><p>まずは無料相談会の申し込みフォームに必要事項をご入力ください。</p></div>
                     <div class="step-arrow">&rarr;</div>
-                    <div class="step">
-                        <div class="step-icon">2</div>
-                        <h3>日程調整</h3>
-                        <p>担当者よりメールにてご連絡し、相談会の日程を調整します。</p>
-                    </div>
+                    <div class="step"><div class="step-icon">2</div><h3>日程調整</h3><p>担当者よりメールにてご連絡し、相談会の日程を調整します。</p></div>
                     <div class="step-arrow">&rarr;</div>
-                    <div class="step">
-                        <div class="step-icon">3</div>
-                        <h3>個別相談会</h3>
-                        <p>オンライン(60分)で講座の詳細やご質問にお答えします。</p>
-                    </div>
+                    <div class="step"><div class="step-icon">3</div><h3>個別相談会</h3><p>オンライン(60分)で講座の詳細やご質問にお答えします。</p></div>
                     <div class="step-arrow">&rarr;</div>
-                    <div class="step">
-                        <div class="step-icon">4</div>
-                        <h3>受講開始</h3>
-                        <p>ご契約後、あなたのペースに合わせて講座をスタートします。</p>
-                    </div>
+                    <div class="step"><div class="step-icon">4</div><h3>受講開始</h3><p>ご契約後、あなたのペースに合わせて講座をスタートします。</p></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ============================================ -->
-    <!--                   Closing                    -->
-    <!-- ============================================ -->
     <section id="contact" class="section closing-section reveal">
         <div class="container">
             <h2 class="section-title">さあ、あなたの才能を開花させる時です</h2>
@@ -357,7 +280,7 @@
                 私たちが全力でサポートします。
             </p>
             <a href="#" class="cta-button">無料個別相談会に申し込む</a>
-            <p class="limited-offer">※ 入学金無料キャンペーンは9月30日まで！ 毎月先着5名様限定です。</p>
+            <p class="limited-offer">※ 上記の割引価格は、タイマーの期間中にお申し込みいただいた方限定です。</p>
         </div>
     </section>
 
